@@ -1,0 +1,109 @@
+body {
+    background-color: #E3F2FD;
+    font-family: monospace;
+}
+
+h1 {
+    text-align: center;
+    color: #03045E;
+}
+
+h2 {
+    color: #023E8A;
+    padding-left: 30px;
+    font-size: 250%;
+}
+
+h3 {
+    font-size: 200%;
+}
+
+p{
+    font-size: 120%;
+}
+
+.logo_facu {
+    height: 95px;
+    width: 200px;
+}
+
+.logo_lenguajes {
+    height: 100px;
+    width: 100px;
+    align-self: center;
+}
+
+.lenguajes_aprendidos {
+    display: flex;
+}
+
+.padre {
+    flex: 1;
+    overflow: auto;
+}
+
+.izquierda {
+    float: left;
+    width: 75%;
+    padding-left: 5%;
+}
+
+.derecha {
+    float: right;
+    width: 10%;
+    padding: 5%;
+}
+
+.foto_alumno {
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+}
+
+.logo_carpincho {
+    border-radius: 30%;
+    height: 100px;
+    width: 100px;
+}
+
+/* Celular (Pantallas pequeñas, hasta 767px) */
+@media (max-width: 767px) {
+    .titulo {
+        justify-content: center;
+    }
+    .navegation {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .container-sobremi {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem; /* margen a lo alto */
+        line-height: 2.5rem; /* espaciado entre los párrafos de texto */
+        font-size: small; /* tamaño de la fuente */
+    }
+}
+
+/* Tableta (Pantallas medianas, entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .titulo {
+        justify-content: center;
+    }
+    .navegation {
+        gap: 2rem;
+        justify-content: center;
+    }
+}
+
+/* Escritorio (Pantallas anchas, 1024px y superiores) */
+@media (min-width: 1024px) {
+    .titulo {
+        justify-content: flex-start;
+    }
+    .navegation {
+        gap: 3rem;
+        justify-content: flex-end;
+        margin: 0 3rem;
+    }
+}
