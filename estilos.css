@@ -1,0 +1,211 @@
+:root{
+    --fondo_proyecto: rgb(173, 232, 244)
+}
+
+body {
+    background-color: #E3F2FD;
+    font-family: monospace;
+}
+
+h1 {
+    text-align: center;
+    color: #03045E;
+}
+
+h2 {
+    color: #023E8A;
+    padding-left: 30px;
+    font-size: 250%;
+}
+
+h3 {
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+p{
+    font-size: 120%;
+}
+
+.text_border {
+    border: 3px solid #023e8a;
+    padding: 2px;
+    display: inline-block;
+    border-radius: 2%;
+}
+
+.logo_facu {
+    height: 95px;
+    width: 200px;
+}
+
+.container_lenguajes{
+    display: inline-table;
+    padding-left: 40px;
+}
+
+.logo_lenguajes {
+    height: 100px;
+    width: 100px;
+    align-self: center;
+}
+
+.lenguajes_aprendidos {
+    display: flex;
+}
+
+.padre {
+    flex: 1;
+    overflow: auto;
+}
+
+.izquierda {
+    float: left;
+    width: 75%;
+    padding-left: 5%;
+}
+
+.derecha {
+    float: right;
+    width: 10%;
+    padding: 5%;
+}
+
+.foto_alumno {
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+}
+
+.logo_carpincho {
+    border-radius: 30%;
+    height: 100px;
+    width: 100px;
+}
+
+.izquierda_exp {
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+.proyectos{
+    width: 80%;
+    padding: 1rem;
+    background: var(--fondo_proyecto);
+}
+
+.galeria_proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.proyecto{
+    background-color: rgb(52, 52, 52);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(33% - 48px);
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 1);
+    text-align: center;
+}
+
+.proyecto img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.proyecto h3{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.titulo_proyecto{
+    text-decoration: none;
+    color: white;
+}
+
+.proyecto p{
+    margin: 10px 0;
+    color: rgb(183 182 182);
+}
+
+.proyecto a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.proyecto a:hover{
+    background-color: #0056b3;   
+}
+
+/*PÁGINA COMPLETA*/
+/* Celular (Pantallas pequeñas, hasta 767px) */
+@media (max-width: 767px) {
+    .titulo {
+        justify-content: center;
+    }
+    .navegation {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .container-sobremi {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem; /* margen a lo alto */
+        line-height: 2.5rem; /* espaciado entre los párrafos de texto */
+        font-size: small; /* tamaño de la fuente */
+    }
+}
+
+/* Tableta (Pantallas medianas, entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .titulo {
+        justify-content: center;
+    }
+    .navegation {
+        gap: 2rem;
+        justify-content: center;
+    }
+}
+
+/* Escritorio (Pantallas anchas, 1024px y superiores) */
+@media (min-width: 1024px) {
+    .titulo {
+        justify-content: flex-start;
+    }
+    .navegation {
+        gap: 3rem;
+        justify-content: flex-end;
+        margin: 0 3rem;
+    }
+}
+
+/*SECCIÓN PROYECTOS*/
+/* Celular (Pantallas pequeñas, hasta 767px) */
+@media (max-width: 767px) {
+    .proyecto{
+        width: calc(100% - 40px);
+    }
+}
+
+/* Tableta (Pantallas medianas, entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .proyecto{
+        width: calc(50% - 40px);
+    }
+}
+
+/* Escritorio (Pantallas anchas, 1024px y superiores) */
+@media (min-width: 1024px) {
+    .proyecto{
+        width: calc(33% - 40px);
+    }
+}
